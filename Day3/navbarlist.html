@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+        }
+        ul{
+            list-style: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            display: block;
+            padding: 1rem 1rem;
+            color: gray;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            color: white;
+            background: black;
+            border-radius: 1rem;
+        }
+        table, th, td{
+            border: 2px solid black;
+        }
+        th, td{
+            padding: 0.5rem;
+        }
+        table{
+            border-spacing: 0.8rem;
+            max-width: 30%;
+        }
+        th{
+            text-align: left;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+        .container{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>myComp</td>
+                <td>Surash</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>Carss 12</td>
+                <td>Raaj</td>
+                <td>Pune</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
