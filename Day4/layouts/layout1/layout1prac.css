@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.main{
+    margin-left: 5%;
+    margin-right:5%;
+}
+h1{
+    color: white;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}   
+.clr{
+    clear: both;
+}
+.col1{
+    background-color: blue;
+}
+.col2{
+    background-color: blueviolet;
+}
+.col3{
+    background-color: dodgerblue;
+}
+.col4{
+    background-color: firebrick;
+}
+.col5{
+    background-color: crimson;
+}
+.header{
+    padding: 3%;
+    width: 92%;
+    margin-left: 9px;
+}
+.nav{
+    height: 50px;
+}
+.box-l{
+    height: 500px;
+    width: 79%;
+}
+.box-r{
+    height: 500px;
+    width: 20%;
+}
+.footer{
+    height: 80px;
+}
+.row{
+    margin: 1%;
+}
