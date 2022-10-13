@@ -1,0 +1,61 @@
+*{ 
+    text-align:center;
+    margin:0; 
+    padding:0;
+}
+.main{
+    margin-left:5%; 
+    margin-right:5%;
+}
+.fl{
+    float:left;
+}
+.fr{ 
+    float:right;
+}
+
+.clr{ 
+    clear:both;
+}
+.row{ 
+    margin-top:1%;
+}
+.col1{ 
+    background:dodgerblue;
+}
+.col2{ 
+    background:green;
+}
+.col3{ 
+    background:red;
+}
+.col4{ 
+    background:blue;
+}
+.col5{ 
+    background:blueviolet;
+}
+
+h1{ 
+    color:white;
+}
+.head{ 
+    padding:3%;
+}
+.nav{ 
+    height:40px;
+}
+.banner{ 
+    height:300px;
+}
+.box-l{ 
+    height:500px; 
+    width:79%;
+}
+.box-r{ 
+    height:500px; 
+    width:20%;
+}
+.footer{ 
+    height:80px;
+}
