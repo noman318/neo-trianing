@@ -192,3 +192,56 @@ hr{
 .footer_data p{
     color: #535252;
 }
+@media screen and (max-width: 850px){
+    #navbar{
+        border: 8px solid black;
+    }
+    #nav_list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .bgImage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        align-items: center;
+    }
+    .link{
+        padding: 5px;   
+    }
+    .link a{
+        margin: 10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    .other_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px;
+        font-size: x-large;
+        height: 40vh;
+    }
+    .other_links li{
+        font-size: x-large;
+    }
+    .iconify{
+        height: 40px;
+        width: 40px;
+    }
+    .my_footer{
+        height: 80vh;
+    }
+    .left_foot{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+}
