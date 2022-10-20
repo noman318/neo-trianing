@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Normal Swapping with 3 variables")
+        document.write('<br>')
+        let num1 = 25;
+        let num2 = 50;
+        let temp = 0;
+
+        console.log("Swap, num1 = " +num1+" num2 = "+num2);
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        console.log("Swap, num1 = " +num1+" num2 = "+num2);
+
+        document.write("<br >Swapping without 3rd variable.")
+        let a = 1;
+        let b = 2;
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+        console.log(a)
+        console.log(b)
+
+        document.write("Normal Swapping with variable")
+        document.write('<br>')
+        let x = 89;
+        let y = 76;
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        console.log(x)
+        console.log(y)
+        
+    </script>
+</body>
+</html>
