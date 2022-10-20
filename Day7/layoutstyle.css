@@ -1,0 +1,27 @@
+.main {
+  background: url(./bg.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+.headerset {
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+.headerset h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.headerset h2 {
+  font-size: 40px;
+}
+.ourservices {
+  padding: 100px 60px;
+}
+.about{
+  padding: 200px 60px;
+}
+.contact{
+  padding: 90px 60px;
+}
