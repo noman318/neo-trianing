@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorChange</title>
+</head>
+<body id="target">
+    <h4>Color Change Interval</h4>
+    <script>
+        colors = new Array("red","orange","green","yellow","pink")
+        prevColor = 0
+        function changeColor() {
+         document.bgColor = colors[prevColor]
+         prevColor = (prevColor + 1) % colors.length
+        }
+
+        function startColorChange() {
+         setInterval("changeColor()",3000)
+        }
+        window.onload = startColorChange
+    </script>
+</body>
+</html>
