@@ -13,7 +13,7 @@ html, body {
   cursor: pointer;
   font-size: 25px;
 }
-.button_operators{
+/* .button_operators{
   padding: 20px;
   margin: 0 5px;
   width: 68px;
@@ -22,7 +22,7 @@ html, body {
   cursor: pointer;
   font-size: 25px;
   background-color: orange;
-}
+} */
 .row{
   margin: 8px 0;
 }
@@ -32,7 +32,7 @@ html, body {
   padding: 15px 5px;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(23, 23, 23); 
   color: white;
 }
 #long{
