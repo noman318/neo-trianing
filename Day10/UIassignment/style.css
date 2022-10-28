@@ -25,3 +25,7 @@
     overflow-y: scroll; 
     height: 400px;
 }
+.photo{
+    background: url(./bg1.jpg);
+    background-size: cover;
+}
