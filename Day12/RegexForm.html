@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegexForm_Validation</title>
+</head>
+<body>
+    <h2>Form_Validation</h2>
+    
+        Name: <input type="text" id='name' /><br><br>
+        Email: <input type="email" id="email"><br><br>
+        Age: <input type="text" id="age"><br><br>
+        Contact: <input type="text" id="con"><br><br>
+        <br>
+        <button id="btn">Submit Form</button>
+        <script>
+            let btn = document.getElementById('btn');
+            btn.addEventListener('click',function(){
+                let regName=/^[a-zA-Z ]+$/;
+                let name = document.getElementById('name').value;
+                if(regName.test(name)){
+                    // alert('Match')
+                    console.log('Match')
+                }else{
+                    // alert('Not_Match')
+                    console.log('Not_Match')
+                }
+
+                let regMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let mail = document.getElementById('email').value;
+                if(regMail.test(mail)){
+                    // alert('Match')
+                    console.log('Match')
+                }else{
+                    // alert('Not_Match')
+                    console.log('Not_Match')
+                }
+
+                let regAge=/^[0-75]+$/;
+                let age = document.getElementById('age').value;
+                if(regAge.test(age)){
+                    // alert('Match')
+                    console.log('Match')
+                }else{
+                    // alert('Not_Match')
+                    console.log('Not_Match')
+                }
+
+                let regCon=/^\d{10}$/;
+                let con = document.getElementById('con').value;
+                if(regCon.test(con)){
+                    // alert('Match')
+                    console.log('Match')
+                }else{
+                    // alert('Not_Match')
+                    console.log('Not_Match')
+                }
+                if(regName.test(name) && regMail.test(mail) && regAge.test(age) && regCon.test(con)){
+                    console.log(`Form is Right and can be submitted ${name}`)
+                    alert(`Form is Right and can be submitted ${name}`)
+                }
+                else{
+                    console.log('Re-enter the Values Properly')
+                }
+            })
+        </script>
+    
+</body>
+</html>
