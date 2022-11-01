@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Manipulation Practice</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Example 1</h2>
-    <p id="target">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam necessitatibus corrupti, quam ipsa maxime id neque provident a, facere libero officiis placeat aspernatur eius ab nihil esse, itaque unde!</p>
-    <button id="btn">Dom_Practice</button><br><br>
+    <p id="target">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam
+      necessitatibus corrupti, quam ipsa maxime id neque provident a, facere
+      libero officiis placeat aspernatur eius ab nihil esse, itaque unde!
+    </p>
+    <button id="btn">Dom_Practice</button><br /><br />
     <script>
-        let doc=document.getElementById('btn')
-        btn.addEventListener('click',function(){
-            let para = document.getElementById('target').innerHTML;
-            // para.innerHTML()
-            // console.log(para)
-            alert(para)
-            let text = 'Hello to Js'
-        })
+      let doc = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let para = document.getElementById("target").innerHTML;
+        // para.innerHTML()
+        // console.log(para)
+        alert(para);
+        let text = "Hello to Js";
+      });
     </script>
-</body>
+  </body>
 </html>

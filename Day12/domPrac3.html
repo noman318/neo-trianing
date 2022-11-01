@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Create Elements</h2>
     <ul id="menu"></ul>
-    <button id="btn">
-        CLick to create a list
-    </button>
+    <button id="btn">CLick to create a list</button>
     <script>
-        let btn= document.getElementById('btn')
-        btn.addEventListener('click',function(){
-            let menus= ['mens','womens','kids'];
-            menus.forEach(function(value){
-                let li_el = document.createElement('li');
-                li_el.innerHTML = value;
-                document.getElementById('menu').appendChild(li_el)
-            })
-        })
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let menus = ["mens", "womens", "kids"];
+        menus.forEach(function (value) {
+          let li_el = document.createElement("li");
+          li_el.innerHTML = value;
+          document.getElementById("menu").appendChild(li_el);
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
