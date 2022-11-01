@@ -8,13 +8,19 @@
   </head>
   <body>
     <h2>Form_Validation</h2>
-
-    Name: <input type="text" id="name" /><br /><br />
-    Email: <input type="email" id="email" /><br /><br />
-    Age: <input type="text" id="age" /><br /><br />
-    Contact: <input type="text" id="con" /><br /><br />
-    <br />
-    <button id="btn">Submit Form</button>
+    <form onload="validate()" name="myList">
+      Name: <input type="text" id="name" required /><br /><br />
+      Email: <input type="email" id="email" required /><br /><br />
+      Age: <input type="text" id="age" required /><br /><br />
+      Contact: <input type="text" id="con" required /><br /><br />
+      Gender: <br />
+      <input type="radio" id="Male" name="gender" value="Male" />
+      <label for="Male">Male</label><br />
+      <input type="radio" id="Female" name="gender" value="Female" />
+      <label for="Female">Female</label><br />
+      <br />
+      <button id="btn">Submit Form</button>
+    </form>
     <script>
       let btn = document.getElementById("btn");
       btn.addEventListener("click", function () {
@@ -57,6 +63,14 @@
           // alert('Not_Match')
           console.log("Not_Match");
         }
+
+        let option = document.getElementsByName("gender");
+
+        if (!(option[0].checked || option[1].checked)) {
+          alert("Please Select Your Gender");
+          return false;
+        }
+
         if (
           regName.test(name) &&
           regMail.test(mail) &&
